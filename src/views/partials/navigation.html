@@ -1,0 +1,36 @@
+
+  <nav class="navbar navbar-expand-md navbar-light" style="background-color: #f89807; font-size: 1.3rem;" id="navegacion">
+    <div class="container">
+       <a class="navbar-brand" href="/" style="font-size: 1.3rem;"><i class="fa fa-television" aria-hidden="true"></i> First Node WebSite</a>
+       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+         aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+       <div class="collapse navbar-collapse" id="collapsibleNavId">
+         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+           <li class="nav-item ">
+             <a class="nav-link active" href="/"> <i class="fa fa-home" aria-hidden="true"></i> Home</a>
+           </li>
+           <li class="nav-item active">
+             <a class="nav-link" href="/#about"><i class="fa fa-building-o mr-1" aria-hidden="true"></i>About</a>
+           </li>
+           <li class="nav-item active">
+             <a class="nav-link" href="/contact"><i class="fa fa-envelope-o mr-1" aria-hidden="true"></i>Contact</a>
+           </li>
+       
+         </ul>
+         <form class="form-inline my-2 my-lg-0 ml-auto">
+           <input class="form-control mr-sm-2" type="text" placeholder="Search">
+           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+         </form>
+       </div>
+     </div>
+   </nav>
+   <script>
+     $(document).ready(function () {
+       $("#navegacion").fadeTo(5000, .8);
+       $(".img-fluid").fadeOut(5000,function(){
+        $(".img-fluid").fadeIn(3000);
+       });
+     });
+   </script>
+
+ 
